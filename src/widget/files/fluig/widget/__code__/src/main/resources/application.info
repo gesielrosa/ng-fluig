@@ -1,0 +1,15 @@
+application.type=widget
+application.code=<%= code %>
+application.title=<%= name %>
+application.description=<%= name %> Widget
+application.category=SYSTEM
+application.renderer=freemarker
+application.icon=icon.png
+application.uiwidget=true
+developer.code=TOTVS
+developer.name=TOTVS S.A.
+developer.url=http\://www.totvs.com
+view.file=view.ftl
+locale.file.base.name=<%= code %>
+simple.deploy=true
+application.mobileapp=true

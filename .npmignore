@@ -1,0 +1,7 @@
+
+# Ignores TypeScript files, but keeps definitions.
+*.ts
+!src/**/*.config.ts
+!src/**/.gitignore
+!*.d.ts
+.idea/

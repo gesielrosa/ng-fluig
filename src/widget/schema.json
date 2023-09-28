@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "title": "Generate Fluig Widget Schema",
+  "type": "object",
+  "properties": {
+    "path": {
+      "type": "string",
+      "format": "path",
+      "$default": {
+        "$source": "workingDirectory"
+      },
+      "description": "The path to create the Fluig folder.",
+      "visible": false
+    },
+    "project": {
+      "type": "string",
+      "description": "The name of the Angular project.",
+      "$default": {
+        "$source": "projectName"
+      }
+    },
+    "name": {
+      "type": "string",
+      "description": "Widget Name",
+      "x-prompt": "What name do you want to give the widget?"
+    }
+  },
+  "required": ["name"]
+}

@@ -1,0 +1,10 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "widget": {
+      "description": "Generate a Fluig widget linked to a Angular app.",
+      "factory": "./widget/index#generateWidget",
+      "schema": "./widget/schema.json"
+    }
+  }
+}
