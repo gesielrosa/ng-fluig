@@ -1,7 +1,7 @@
 application.type=widget
 application.code=<%= code %>
 application.title=<%= name %>
-application.description=<%= name %> Widget
+application.description=<%= description %>
 application.category=SYSTEM
 application.renderer=freemarker
 application.icon=icon.png

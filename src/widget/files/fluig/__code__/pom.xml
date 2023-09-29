@@ -9,7 +9,7 @@
   <packaging>war</packaging>
 
   <name><%= name %></name>
-  <description><%= name %> Widget</description>
+  <description><%= description %></description>
 
   <build>
     <plugins>
@@ -34,7 +34,7 @@
               <goal>npm</goal>
             </goals>
             <configuration>
-              <arguments>install</arguments>
+              <arguments><%= installCommand %></arguments>
             </configuration>
           </execution>
           <execution>

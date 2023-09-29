@@ -35,8 +35,11 @@ export function generateWidget(_options: any): Rule {
         _options.path = normalize(_options.path || 'fluig/widget');
         _options.code = strings.underscore(_options.name);
         _options.buildCommand = `run build -- --project=${_options.project} --output-path="${_options.path ? _options.path + '/' : ''}${_options.code}/src/main/webapp/resources" --deploy-url="/${_options.code}/resources/"`;
+        _options.installCommand = _options.installCommand || 'install';
         _options.nodeVersion = `v${process.versions.node}`;
         _options.workingDirectory = new Array((_options.path?.split('/').filter(Boolean).length || 0) + 1).fill('../').join('');
+        _options.description = _options.description || `${_options.name} Widget`;
+        _options.rootSelector = _options.rootSelector || 'app-root';
         _options.gitignore = '.gitignore';
 
         const fluigMovePath = normalize(_options.path + '/');

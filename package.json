@@ -1,6 +1,6 @@
 {
   "name": "ng-fluig",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Schematics Fluig para Angular",
   "scripts": {
     "build": "tsc -p tsconfig.json"

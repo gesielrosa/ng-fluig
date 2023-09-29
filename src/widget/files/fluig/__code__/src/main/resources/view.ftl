@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" href="/${coreContext}/resources/styles.css">
 
-<app-root></app-root>
+<<%= rootSelector %>></<%= rootSelector %>>
 
 <script>
 (function setEnvironmentParams() {

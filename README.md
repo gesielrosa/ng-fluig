@@ -21,11 +21,14 @@ ng g ng-fluig:widget
 
 ### Opções disponíveis
 
-| Propriedade | Obrigatório | Descrição                                                            | Valor padrão                | Exemplo                       |
-|-------------|-------------|----------------------------------------------------------------------|-----------------------------|-------------------------------|
-| name        | Sim         | O nome do Widget a ser criado.                                       |                             | `--name="Meu Super Projeto"`  |
-| project     | Não         | O nome do projeto Angular que será associado ao widget. `(opcional)` | Projeto padrão do workspace | `--project=app-super-projeto` |
-| path        | Não         | O caminho onde será gerado o widget. `(opcional)`                    | `fluig/widget`              | `--path=libs`                 |
+| Propriedade     | Obrigatório | Descrição                                                             | Valor padrão                | Exemplo                                          |
+|-----------------|-------------|-----------------------------------------------------------------------|-----------------------------|--------------------------------------------------|
+| name            | Sim         | O nome do widget.                                                     |                             | `--name="Meu Super Projeto"`                     |
+| description     | Não         | A descrição do widget. `(opcional)`                                   | O nome do widget            | `--description="Um super projeto Angular"`       |
+| project         | Não         | O nome do projeto Angular que será associado ao widget. `(opcional)`  | Projeto padrão do workspace | `--project=app-super-projeto`                    |
+| path            | Não         | O caminho onde será gerado o widget. `(opcional)`                     | `fluig/widget`              | `--path=libs/widget`                             |
+| root-selector   | Não         | O seletor (tag html) do componente raiz. `(opcional)`                 | `app-root`                  | `--root-selector=app-raiz`                       |
+| install-command | Não         | Comando de instalação das dependências (NPM) do projeto. `(opcional)` | `install`                   | `--install-command="install --legacy-peer-deps"` |
 
 ## Contribuidores
 

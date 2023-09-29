@@ -19,9 +19,24 @@
         "$source": "projectName"
       }
     },
+    "root-selector": {
+      "type": "string",
+      "format": "html-selector",
+      "description": "The selector to use for the app root component.",
+      "default": "app-root"
+    },
+    "install-command": {
+      "type": "string",
+      "description": "Custom npm install command",
+      "default": "install"
+    },
+    "description": {
+      "type": "string",
+      "description": "Widget description."
+    },
     "name": {
       "type": "string",
-      "description": "Widget Name",
+      "description": "Widget name",
       "x-prompt": "What name do you want to give the widget?"
     }
   },
