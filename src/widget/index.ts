@@ -32,17 +32,17 @@ export function generateWidget(_options: any): Rule {
     return async (_tree: Tree, _context: SchematicContext) => {
         await setupProjectPath(_tree, _options);
 
-        _options.path = normalize(_options.path || '');
+        _options.path = normalize(_options.path || 'fluig/widget');
         _options.code = strings.underscore(_options.name);
-        _options.buildCommand = `run build -- --project=${_options.project} --output-path="${_options.path ? _options.path + '/' : ''}fluig/widget/${_options.code}/src/main/webapp/resources" --deploy-url="/${_options.code}/resources/"`;
+        _options.buildCommand = `run build -- --project=${_options.project} --output-path="${_options.path ? _options.path + '/' : ''}${_options.code}/src/main/webapp/resources" --deploy-url="/${_options.code}/resources/"`;
         _options.nodeVersion = `v${process.versions.node}`;
-        _options.workingDirectory = new Array((_options.path?.split('/').filter(Boolean).length || 0) + 3).fill('../').join('');
+        _options.workingDirectory = new Array((_options.path?.split('/').filter(Boolean).length || 0) + 1).fill('../').join('');
         _options.gitignore = '.gitignore';
 
         const fluigMovePath = normalize(_options.path + '/');
         const fluigTemplateSource = apply(url('./files/fluig'), [
             template({..._options}),
-            move(join(normalize(fluigMovePath), 'fluig'))
+            move(normalize(fluigMovePath))
         ]);
 
         const angularMovePath = normalize(_options.projectPath + '/');

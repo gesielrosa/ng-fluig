@@ -21,11 +21,11 @@ ng g ng-fluig:widget
 
 ### Opções disponíveis
 
-| Propriedade | Obrigatório | Descrição                                                            | Exemplo                       |
-|-------------|-------------|----------------------------------------------------------------------|-------------------------------|
-| name        | Sim         | O nome do Widget a ser criado.                                       | `--name="Meu Super Projeto"`  |
-| project     | Não         | O nome do projeto Angular que será associado ao widget. `(opcional)` | `--project=app-super-projeto` |
-| path        | Não         | O caminho onde será gerada a estrutura do Fluig. `(opcional)`        | `--path=libs`                 |
+| Propriedade | Obrigatório | Descrição                                                            | Valor padrão                | Exemplo                       |
+|-------------|-------------|----------------------------------------------------------------------|-----------------------------|-------------------------------|
+| name        | Sim         | O nome do Widget a ser criado.                                       |                             | `--name="Meu Super Projeto"`  |
+| project     | Não         | O nome do projeto Angular que será associado ao widget. `(opcional)` | Projeto padrão do workspace | `--project=app-super-projeto` |
+| path        | Não         | O caminho onde será gerado o widget. `(opcional)`                    | `fluig/widget`              | `--path=libs`                 |
 
 ## Contribuidores
 
