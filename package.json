@@ -1,6 +1,6 @@
 {
-  "name": "ng-fluig",
-  "version": "0.0.5",
+  "name": "@gesielrosa/ng-fluig",
+  "version": "0.0.2",
   "description": "Schematics Fluig para Angular",
   "scripts": {
     "build": "tsc -p tsconfig.json"
@@ -14,13 +14,14 @@
     "widget"
   ],
   "author": "Gesiel Rosa",
-  "homepage": "https://gesiel.com",
+  "homepage": "https://github.com/gesielrosa/ng-fluig",
   "repository": {
     "type": "git",
     "url": "https://github.com/gesielrosa/ng-fluig"
   },
   "license": "MIT",
   "schematics": "./src/collection.json",
+  "private": false,
   "dependencies": {
     "@angular-devkit/core": "^16.2.4",
     "@angular-devkit/schematics": "^16.2.4",

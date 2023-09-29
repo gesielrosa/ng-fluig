@@ -1,14 +1,16 @@
-# [ng-fluig] Schematics Fluig para Angular
+# Schematics Fluig para Angular
 
-Este repositório tem como objetivo prover schematics que facilitam o desenvolvimento de aplicações Angular na plataforma
-TOTVS Fluig.
+Este projeto tem como objetivo prover schematics que facilitam o desenvolvimento de aplicações Angular na plataforma
+[TOTVS Fluig](https://www.totvs.com/fluig/).
+
+> Projeto independente, sem nenhum vínculo com a TOTVS.
 
 ## Instalação
 
 A instalação pode ser feita via NPM:
 
 ```bash
-npm install -D ng-fluig
+npm install -D @gesielrosa/ng-fluig
 ```
 
 ## Gerar um Widget
@@ -16,7 +18,7 @@ npm install -D ng-fluig
 Para gerar um widget basta executar o comando abaixo no seu projeto Angular:
 
 ```bash
-ng g ng-fluig:widget
+ng g @gesielrosa/ng-fluig:widget
 ```
 
 ### Opções disponíveis
